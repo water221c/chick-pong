@@ -16,3 +16,5 @@ func _physics_process(delta):
 		if collision.get_collider().has_method("hit"):
 			collision.get_collider().hit()
 	mult -= 0.5 * delta
+	if (mult < 1):
+		mult = 1
